@@ -53,7 +53,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 :focus {
-    outline: none;
+    /* outline: none; */
+    outline-style: none;
 }
 
 .header-style {
@@ -490,6 +491,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     max-width: 95vh;
     max-height: 95vh;
 
+    padding: 40px;
+
     
 
     top: 50%;
@@ -497,6 +500,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
     border-radius: 4px;
     background-color: var(--main-bg-color);
+    
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -510,6 +514,17 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
     
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.modal-comment {
+    resize: none;
+    border-radius: 4px;
 }
 
 .close-button {
